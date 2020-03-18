@@ -379,35 +379,31 @@ Text Label 6150 1300 0    50   ~ 0
 ESP_RXD0
 Wire Wire Line
 	6000 1100 6150 1100
-Text Label 6650 4300 2    50   ~ 0
+Text Label 6650 4500 2    50   ~ 0
 ESP_TXD0
 Text Label 6650 4400 2    50   ~ 0
 ESP_RXD0
 Wire Wire Line
 	6000 1300 6150 1300
-Text Label 6650 4100 2    50   ~ 0
-IO23
-Text Label 6650 4200 2    50   ~ 0
-IO22
-Text Label 6650 4500 2    50   ~ 0
-IO21
-Text Label 6650 4600 2    50   ~ 0
-IO19
 Text Label 6650 4700 2    50   ~ 0
+IO23
+Text Label 6650 4600 2    50   ~ 0
+IO22
+Text Label 6650 4300 2    50   ~ 0
+IO21
+Text Label 6650 4200 2    50   ~ 0
+IO19
+Text Label 6650 4100 2    50   ~ 0
 IO18
-Text Label 4500 4100 0    50   ~ 0
-IO34
-Text Label 4500 4200 0    50   ~ 0
-IO35
-Text Label 4500 4300 0    50   ~ 0
+Text Label 4500 4700 0    50   ~ 0
 IO32
-Text Label 4500 4400 0    50   ~ 0
+Text Label 4500 4600 0    50   ~ 0
 IO33
 Text Label 4500 4500 0    50   ~ 0
 IO25
-Text Label 4500 4600 0    50   ~ 0
+Text Label 4500 4400 0    50   ~ 0
 IO26
-Text Label 4500 4700 0    50   ~ 0
+Text Label 4500 4300 0    50   ~ 0
 IO27
 Text Label 3100 1500 0    50   ~ 0
 ESP_TXD0
@@ -417,12 +413,98 @@ Wire Wire Line
 	2850 1500 3100 1500
 Wire Wire Line
 	2850 1600 3100 1600
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5E723208
+P 4700 4200
+F 0 "#PWR0113" H 4700 4050 50  0001 C CNN
+F 1 "+3.3V" H 4715 4373 50  0000 C CNN
+F 2 "" H 4700 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E7234E3
+P 4800 4000
+F 0 "#PWR0114" H 4800 3750 50  0001 C CNN
+F 1 "GND" H 4805 3827 50  0000 C CNN
+F 2 "" H 4800 4000 50  0001 C CNN
+F 3 "" H 4800 4000 50  0001 C CNN
+	1    4800 4000
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	1450 1500 1200 1500
+	4700 4100 4700 4000
 Wire Wire Line
-	1200 1500 1200 750 
+	4700 4000 4800 4000
+Text Label 6100 2600 0    50   ~ 0
+IO23
+Text Label 6100 2500 0    50   ~ 0
+IO22
+Text Label 6100 2400 0    50   ~ 0
+IO21
+Text Label 6100 2300 0    50   ~ 0
+IO19
+Text Label 6100 2200 0    50   ~ 0
+IO18
 Wire Wire Line
-	1200 750  2250 750 
+	6000 2200 6100 2200
 Wire Wire Line
-	2250 750  2250 1200
+	6000 2300 6100 2300
+Wire Wire Line
+	6000 2400 6100 2400
+Wire Wire Line
+	6000 2500 6100 2500
+Wire Wire Line
+	6000 2600 6100 2600
+Text Label 6100 2700 0    50   ~ 0
+IO25
+Text Label 6100 2800 0    50   ~ 0
+IO26
+Text Label 6100 2900 0    50   ~ 0
+IO27
+Text Label 6100 3000 0    50   ~ 0
+IO32
+Wire Wire Line
+	6000 2700 6100 2700
+Wire Wire Line
+	6000 2800 6100 2800
+Wire Wire Line
+	6000 2900 6100 2900
+Wire Wire Line
+	6000 3000 6100 3000
+Text Label 6100 3100 0    50   ~ 0
+IO33
+Wire Wire Line
+	6000 3100 6100 3100
+Wire Wire Line
+	6650 4100 6750 4100
+Wire Wire Line
+	6650 4200 6750 4200
+Wire Wire Line
+	6650 4300 6750 4300
+Wire Wire Line
+	6650 4400 6750 4400
+Wire Wire Line
+	6650 4500 6750 4500
+Wire Wire Line
+	6650 4600 6750 4600
+Wire Wire Line
+	6650 4700 6750 4700
+Wire Wire Line
+	4400 4100 4700 4100
+Wire Wire Line
+	4400 4200 4700 4200
+Wire Wire Line
+	4400 4300 4500 4300
+Wire Wire Line
+	4400 4400 4500 4400
+Wire Wire Line
+	4400 4500 4500 4500
+Wire Wire Line
+	4400 4600 4500 4600
+Wire Wire Line
+	4400 4700 4500 4700
 $EndSCHEMATC

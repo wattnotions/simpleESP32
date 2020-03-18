@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 4)
-    (tracks 0)
+    (tracks 7)
     (zones 0)
     (modules 12)
     (nets 68)
@@ -34,11 +34,12 @@
   )
 
   (setup
-    (last_trace_width 0.25)
-    (trace_clearance 0.2)
+    (last_trace_width 0.153)
+    (user_trace_width 0.153)
+    (trace_clearance 0.1524)
     (zone_clearance 0.508)
     (zone_45_only no)
-    (trace_min 0.2)
+    (trace_min 0.153)
     (segment_width 0.2)
     (edge_width 0.2)
     (via_size 0.8)
@@ -160,7 +161,7 @@
   (net 67 "Net-(U2-Pad19)")
 
   (net_class Default "This is the default net class."
-    (clearance 0.2)
+    (clearance 0.1524)
     (trace_width 0.25)
     (via_dia 0.8)
     (via_drill 0.4)
@@ -935,5 +936,13 @@
   (gr_line (start 162 97) (end 162 143) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 139 97) (end 162 97) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 139 143) (end 139 97) (layer Edge.Cuts) (width 0.2))
+
+  (segment (start 142 99.515) (end 143.515 99.515) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 143.515 99.515) (end 143.75 99.75) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 143.75 120.6875) (end 145.5 122.4375) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 143.75 99.75) (end 143.75 120.6875) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 145.5 122.4375) (end 146.5625 122.4375) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 147.5 121.5) (end 149.35 121.5) (width 0.153) (layer F.Cu) (net 3))
+  (segment (start 146.5625 122.4375) (end 147.5 121.5) (width 0.153) (layer F.Cu) (net 3))
 
 )
